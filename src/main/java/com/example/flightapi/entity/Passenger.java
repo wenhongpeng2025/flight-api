@@ -21,7 +21,7 @@ public class Passenger {
 
     @ManyToOne
     @JoinColumn(name = "booking_id", nullable = false)
-    private Booking booking;
+    private Long bookingId;
 
     @Column(name = "first_name", nullable = false, length = 50)
     private String firstName;

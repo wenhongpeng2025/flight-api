@@ -26,11 +26,11 @@ public class Booking {
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private Long userId;
 
     @ManyToOne
     @JoinColumn(name = "flight_id", nullable = false)
-    private Flight flight;
+    private Long flightId;
 
     @Column(nullable = false, length = 20)
     private String reference;

@@ -30,11 +30,11 @@ public class Flight {
 
     @ManyToOne
     @JoinColumn(name = "departure_airport_id", nullable = false)
-    private Airport departureAirport;
+    private Long departureAirportId;
 
     @ManyToOne
     @JoinColumn(name = "destination_airport_id", nullable = false)
-    private Airport destinationAirport;
+    private Long destinationAirportId;
 
     @Column(name = "departure_date", nullable = false)
     private LocalDate departureDate;
